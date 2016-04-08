@@ -8,10 +8,10 @@ public class backScroll : MonoBehaviour {
     Material myMaterial;
 
 	// Use this for initialization
-	void Start () {
+    void Start()
+    {
         myMaterial = GetComponent<Renderer>().material;
-	}
-	
+    }	
 	// Update is called once per frame
 	void Update () {
         float newOffsetY = myMaterial.mainTextureOffset.y + scrollSpeed * Time.deltaTime;
